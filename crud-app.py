@@ -18,7 +18,7 @@ gc = init_connection()
 # ==========================================
 # 2. 開啟指定的試算表與工作表
 # ==========================================
-SHEET_INPUT = "https://docs.google.com/spreadsheets/d/1Zzcg8JcL_eOzdOcV_kC5l50sfG82PqA5T6A1XdPSj08/edit?usp=sharing"
+SHEET_INPUT = "https://docs.google.com/spreadsheets/d/1Zzcg8JcL_eOzdOcV_kC5l50sfG82PqA5T6A1XdPSj08/edit?gid=0#gid=0"
 WORKSHEET_NAME = "Sheet1"
 
 try:
@@ -129,4 +129,3 @@ if data:
                 worksheet.delete_rows(selected_row_del)
             st.success("資料已成功刪除！")
             st.rerun()
-
